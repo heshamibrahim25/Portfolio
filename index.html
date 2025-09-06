@@ -76,8 +76,21 @@
 
 <!-- Contact -->
 <section id="contact" class="max-w-6xl mx-auto px-4 py-10">
-  <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-  <p>Email: <a href="mailto:contact@example.com" class="underline">contact@example.com</a></p>
+<form
+  action="https://formspree.io/f/mdklynby"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"> Feel Free to reach out to me so we can have this success brought to light</textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 </section>
 
 <footer class="py-8 text-center text-sm text-slate-500">
@@ -106,13 +119,13 @@ const data = {
       title: "Azure Infrastructure Build",
       period: "Cloud adoption",
       stack: ["Azure", "VM"],
-      impact: ["Built Azure environments", "Migrated workloads"]
+      impact: ["Built Azure Infra", "Migrated workloads"]
     },
       {
       title: "Huawei Infrastructure Build",
       period: "Cloud adoption",
       stack: ["Migration", "ECS"],
-      impact: ["Provision Huawei environments", "SMS Migrated"]
+      impact: ["Provision Huawei Infra", "SMS Migrated"]
     }
   ]
 };
