@@ -2,117 +2,157 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hesham Ibrahim | Senior Cloud Engineer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hesham Ibrahim | Portfolio</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6;}
+    header {background:#222; color:#fff; padding:20px 0; text-align:center;}
+    header h1 {margin:0;}
+    nav {background:#444; color:#fff; display:flex; justify-content:center;}
+    nav a {color:#fff; padding:14px 20px; text-decoration:none; display:block;}
+    nav a:hover {background:#555;}
+    section {padding:40px 20px; max-width:1000px; margin:auto;}
+    h2 {color:#222; margin-top:0;}
+    .skills-grid, .projects-grid {display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px;}
+    .card {background:#f4f4f4; padding:20px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+    form input, form textarea {width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:5px;}
+    form button {background:#222; color:#fff; border:none; padding:10px 20px; cursor:pointer; border-radius:5px;}
+    form button:hover {background:#555;}
+    footer {background:#222; color:#fff; text-align:center; padding:15px; margin-top:20px;}
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-  <!-- Hero Section -->
-  <header class="bg-blue-700 text-white py-16 text-center">
-    <h1 class="text-4xl font-bold mb-4">Hesham Ibrahim</h1>
-    <p class="text-lg">Senior Cloud Engineer | Azure, Huawei Cloud, AWS</p>
+<body>
+  <header>
+    <h1>Hesham Ibrahim</h1>
+    <p>Senior Cloud & DevOps Engineer | Multi-Cloud | CI/CD | Automation</p>
   </header>
 
-  <!-- About Section -->
-  <section class="max-w-4xl mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold mb-6">About Me</h2>
-    <p class="mb-4">
-      I am a Senior Cloud Engineer with a strong foundation in IT and a passion for enabling businesses to innovate through technology. I began my career in system administration, managing on-premises environments, and later expanded into multi-cloud expertise including Microsoft Azure, Huawei Cloud, and AWS.
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a DevOps and Cloud Engineer with expertise in designing, automating, and optimizing 
+      cloud-based infrastructures across platforms like Azure, AWS, and Huawei Cloud. I specialize 
+      in CI/CD pipelines, containerization (Docker, Kubernetes), infrastructure as code (Terraform, Ansible), 
+      and cloud-native solutions that enhance scalability, security, and operational efficiency. 
+      My focus is on bridging development and operations to deliver faster, more reliable, and cost-effective deployments.
     </p>
-    <p class="mb-4">
-      I have earned certifications including AZ-900, MS-900, HCCPA, and HCCDP, while pursuing advanced tracks such as AZ-104, AZ-305, and AWS Solutions Architect. My expertise includes identity & access management, governance, security, high availability, and disaster recovery.
+    <p>
+      I’ve always seen my career as more than just a collection of roles or certifications. 
+      It’s been a journey of growth, resilience, and a constant push to raise my own standards. 
+      From the beginning, I was driven by curiosity and a genuine desire to understand how technology connects people 
+      and makes businesses stronger. That curiosity shaped the way I approached every step of my path, not only as a learner 
+      but as someone who wanted to create real impact.
+    </p>
+    <p>
+      Along the way, I discovered that growth doesn’t come from comfort—it comes from challenges. 
+      Each new certification, each skill I studied, wasn’t just about passing an exam; 
+      it was about proving to myself that I could step into bigger shoes and handle greater responsibility. 
+      I’ve learned to be adaptable, to lead when leadership is needed, and to listen when collaboration matters most.
+    </p>
+    <p>
+      Today, as a Senior Cloud Engineer, I see my role as part technical expertise, part problem-solver, and part mentor. 
+      What drives me is the opportunity to take complex challenges and turn them into solutions that bring value to teams and organizations. 
+      Just as importantly, I take pride in helping others around me grow, because I know firsthand how guidance and encouragement 
+      can transform someone’s career path.
+    </p>
+    <p>
+      My story is still being written, but if there’s one constant, it’s this: 
+      I’m committed to learning, evolving, and contributing—not just to technology, 
+      but to the people and organizations that depend on it.
     </p>
   </section>
 
-  <!-- Technical Skills Section -->
-  <section class="bg-white max-w-4xl mx-auto px-6 py-12 shadow-md rounded-xl">
-    <h2 class="text-3xl font-bold mb-6">Technical Skills</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <ul class="list-disc pl-5 space-y-2">
-        <li><strong>System Administration:</strong> Windows, Linux</li>
-        <li><strong>Containerization & Orchestration:</strong> Docker, Kubernetes</li>
-        <li><strong>CI/CD:</strong> Jenkins</li>
-        <li><strong>Cloud Platforms:</strong> Huawei, Azure, AWS</li>
-        <li><strong>Version Control:</strong> Git, GitHub</li>
-      </ul>
-      <ul class="list-disc pl-5 space-y-2">
-        <li><strong>Web Servers:</strong> Nginx, Apache</li>
-        <li><strong>Infrastructure as Code (IaC):</strong> Terraform</li>
-        <li><strong>Virtualization:</strong> VMware (ESXi, vCenter), Hyper-V</li>
-        <li><strong>Scripting & Automation:</strong> Python, Bash</li>
-        <li><strong>Configuration Management:</strong> Ansible</li>
-        <li><strong>Monitoring & Observability:</strong> Prometheus</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Career Highlights -->
-  <section class="max-w-4xl mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold mb-6">Career Highlights</h2>
-    <ul class="list-disc pl-5 space-y-3">
-      <li>Led large-scale cloud migrations and cost optimization projects.</li>
-      <li>Implemented a highly available Exchange 2019 DAG and vSphere solution.</li>
-      <li>Designed Azure infrastructures with end-user data migration and governance.</li>
-      <li>Migrated traditional file servers to Azure File Share & Azure Virtual Desktop.</li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section class="max-w-4xl mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold mb-6">Key Projects</h2>
-    <div class="grid gap-6">
-      <div class="p-6 bg-white rounded-lg shadow">
-        <h3 class="text-xl font-semibold mb-2">Deploy a Static Website with Docker</h3>
-        <p>Based on an HTML/CSS website, it was packaged into a Docker container and tested on a local server.</p>
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="card">
+        <h3>System Administration</h3>
+        <p>Windows, Linux</p>
       </div>
-      <div class="p-6 bg-white rounded-lg shadow">
-        <h3 class="text-xl font-semibold mb-2">Automate Package Installation</h3>
-        <p>Used an Ansible script to install packages (Git, Node.js, Docker) on a fresh Linux server.</p>
+      <div class="card">
+        <h3>Containerization & Orchestration</h3>
+        <p>Docker, Kubernetes</p>
       </div>
-      <div class="p-6 bg-white rounded-lg shadow">
-        <h3 class="text-xl font-semibold mb-2">Create a CI/CD Pipeline using Azure DevOps</h3>
-        <p>Implemented a CI/CD pipeline to streamline software deployment, following DevOps/SRE best practices.</p>
+      <div class="card">
+        <h3>CI/CD</h3>
+        <p>Jenkins</p>
       </div>
-      <div class="p-6 bg-white rounded-lg shadow">
-        <h3 class="text-xl font-semibold mb-2">Containerization of Java Project using Docker</h3>
-        <p>Built a Dockerfile to containerize a Java application, enabling automated builds and deployments.</p>
+      <div class="card">
+        <h3>Cloud Platforms</h3>
+        <p>Huawei, Azure, AWS</p>
+      </div>
+      <div class="card">
+        <h3>Version Control</h3>
+        <p>Git, GitHub</p>
+      </div>
+      <div class="card">
+        <h3>Web Servers</h3>
+        <p>Nginx, Apache</p>
+      </div>
+      <div class="card">
+        <h3>Infrastructure as Code (IaC)</h3>
+        <p>Terraform</p>
+      </div>
+      <div class="card">
+        <h3>Virtualization</h3>
+        <p>VMware (ESXi, vCenter), Hyper-V</p>
+      </div>
+      <div class="card">
+        <h3>Scripting & Automation</h3>
+        <p>Python, Bash</p>
+      </div>
+      <div class="card">
+        <h3>Configuration Management</h3>
+        <p>Ansible</p>
+      </div>
+      <div class="card">
+        <h3>Monitoring & Observability</h3>
+        <p>Prometheus</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="bg-gray-100 py-16">
-    <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-gray-900 mb-6">Contact Me</h2>
-      <form action="https://formspree.io/f/mdklynby" method="POST" class="space-y-4 bg-white p-6 rounded-lg shadow">
-        <div>
-          <label for="name" class="block text-gray-700">Name</label>
-          <input type="text" name="name" id="name" required
-            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-        </div>
-        <div>
-          <label for="email" class="block text-gray-700">Email</label>
-          <input type="email" name="email" id="email" required
-            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-        </div>
-        <div>
-          <label for="message" class="block text-gray-700">Message</label>
-          <textarea name="message" id="message" rows="5" required
-            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-        </div>
-        <button type="submit"
-          class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-          Send Message
-        </button>
-      </form>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Deploy a Static Website with Docker</h3>
+        <p>Based on a HTML/CSS website, it was packaged into a Docker container, and tested on a local server.</p>
+      </div>
+      <div class="card">
+        <h3>Automate Package Installation</h3>
+        <p>Using Ansible script to install packages (Git, Node.js, Docker) on a fresh Linux server.</p>
+      </div>
+      <div class="card">
+        <h3>Create a CI/CD Pipeline using Azure DevOps</h3>
+        <p>A set of procedures for continuous integration and continuous delivery to optimize software deployment.</p>
+      </div>
+      <div class="card">
+        <h3>Containerization of Java Project using Docker</h3>
+        <p>Created a Dockerfile to build a Docker image for Java applications and automate container builds.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="text-center text-gray-500 py-6">
-    © 2025 Hesham Ibrahim – All rights reserved.
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Hesham Ibrahim | Built with passion and technology</p>
   </footer>
-
 </body>
 </html>
